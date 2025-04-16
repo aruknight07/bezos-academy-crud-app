@@ -33,6 +33,8 @@ This will:
 - Start the Vite development server for the frontend
 - Start the Express server with SQLite for backend operations
 
+After the command has been executed, open the `http://localhost:5173/` address in a browser in order to interact with the application.
+
 ## 🛠️ Technologies Used
 - Language | JavaScript / TypeScript  
 - Frontend | React, Vite  
