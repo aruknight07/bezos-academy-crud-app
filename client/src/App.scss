@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+#root > div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* full viewport height */
+}
+
+header {
+    height: 10%; /* or any fixed value */
+    background: #1d478b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 1 0 70%; /* flex-grow: 1; flex-shrink: 0; flex-basis: 70% */
+    overflow: scroll;
+
+    ul {
+        list-style-type: none;
+        padding: .5rem 1rem;
+        margin:0;
+        
+        li {
+            color: #1d478b;
+            background-color: #e6f3f6;
+            border-radius: 1rem;
+            margin: .25rem .5rem;
+            padding: .8rem 1rem;
+
+            .log-entry-title {
+                font-weight: bold;
+                font-size: 1.2rem;
+                font-style: normal;
+            }
+
+            span.user-name {
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin-top: .25rem;
+            }
+            div {
+                span {
+                    font-style: italic;
+                }
+            }
+
+            .edit-log-item {
+                cursor: pointer;
+            }
+
+            button {
+                color-scheme: light;
+                border-radius: 8px;
+                background-color: #ffffff;
+                border: 1px solid #333;
+                cursor: pointer;
+                transition: border-color 0.25s;
+                margin-right: 1rem;
+            }
+        }
+
+    }
+}
+
+footer {
+    position: relative;
+    height: 15%;
+    background: #2991c3;
+
+    #edit-user-information {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+    
+    form#create-log {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        
+        textarea {
+            width: 40vw;
+            // min-height: 10vh;
+            height: 80%;
+            resize: none;
+        }
+    }
+
+    form#set-name-and-location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        
+        textarea {
+            width: 40vw;
+            // min-height: 10vh;
+            height: 80%;
+            resize: none;
+        }
+    }
+}
