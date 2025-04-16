@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# bezos-academy-crud-app
-CRUD app for Bezos academy assessment.
-=======
 # 🧾 Bezos academy Logs App
 
 A basic full-stack application that provides Create, Read, Update, and Delete (CRUD) operations for managing logs. Built using modern web technologies including **React**, **TypeScript**, **Node.js**, **Express**, and **better-sqlite3**.
@@ -55,4 +51,3 @@ This will:
 - Update log entries
 - Delete logs
 - Simple, fast local development setup
->>>>>>> be2ee7c (Commit to include first frontend change)
